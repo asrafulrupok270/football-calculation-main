@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+ 
+body{
+    font-family: 'Poppins', sans-serif;
+ ;
+}
+
+.banner{
+    display: flex;
+   
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 60px;
+    padding: 50px;
+    margin-bottom: 100px;
+    width: 80%
+}
+.banner-img:hover{
+    transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+} 
+.container{
+    perspective: 320px;
+  }
+  .btn{
+    display: block;
+    width: 250px;
+    height: 40px;
+    background-color: 
+      #DD0000;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+  }
+  .btn:hover{
+      transform: rotateY(-15deg);
+      box-shadow: 0 8px 15px black;
+      background-color: darkcyan;
+  }
+  
+.world-cup-info{
+    margin-left: 30px;
+}
+.world-cup-info h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.world-cup-info button{
+    text-transform: capitalize;
+    padding: 8px 28px;
+    border-radius: 5px ;
+    background-color: rgb(230, 85, 85);
+    border: 1px solid rgb(230, 85, 85);
+    color: white;
+    font-weight: 700;
+}
+.world-cup-info button:hover{
+     background-color: yellow;
+     color: black;
+}
+.box-match{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+  .box{
+    display: grid;
+    grid-template-columns: repeat(1,1fr); 
+    border: 5px solid black; 
+    padding:0px 20px;
+    height: 250px;   
+    margin-left: 20px; 
+    background: #161616;
+    border-radius: 10px;
+}  
+.upcoming-match button{
+    padding: 15px 28px; 
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: 1px solid brown;
+    background-color: brown;
+    color: white;
+    border: 1px solid brown;
+}
+ 
+   
+ 
+ .blog button{
+  
+    padding: 15px 20px; 
+    color: black;
+    border: 1px solid black;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 5px;
+
+ }
+ .qualifying button{
+    padding: 15px 28px; 
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: 1px solid white;
+    
+    color:black;
+     
+ }
+ .fa-regular{
+    color:  gray;
+    margin-right: 15px;
+     
+ } 
+ .thumnail{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+   
+    width: 70%;
+
+     
+ 
+}
+ .thumnail button{
+    text-transform: capitalize;
+    padding: 2px 16px;
+     }
+ .match{
+    box-shadow: 0px 0px 12px gray;
+    padding: 20px;
+    border-radius: 10px;
+
+   
+ }
+ .match img{
+    width: 100%;
+    margin-bottom: 10px;
+ }
+ .match-1{
+    display: flex;
+    justify-content: space-between;
+ }
+.match-1 img{
+    margin-right: 15px;
+  
+}
+.vs{
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.match-info h3{
+font-size: 15px;
+text-align: center;
+font-weight: 700;
+}
+ 
+.match-info p{
+font-size: 12px;
+text-align: center;
+color: rgb(102, 86, 86);
+font-weight: 700;
+}
+
+
+/* footer start  */
+footer{
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+ }
+ span{
+    margin-right: 20px;
+    text-transform: capitalize;
+    font-size: 13px;
+ }
+ .social{
+    font-size: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+ }
+ .social,.fb,.insta,.whatts{
+    margin-right: 20px;
+ }
+ /* footer end  */
+
+ 
+ /* for mobile view -------- */
+ @media screen  and (max-width:480px){
+   
+    .banner{
+        flex-direction: column-reverse;
+        margin-left: 30px;
+        padding: 20px;
+    }
+    .world-cup-info h1{
+       font-size: 30px;
+    }
+    .thumnail{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 20px;
+        width: 80%;
+    }
+  
+    span{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box-match{
+        flex-direction: column;
+        margin-left: 60px;
+    }
+   
+ }
+
+  /* for i-pad view  */
+  @media screen  and (min-width:481px) and (max-width:768px){
+    
+    .thumnail{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+    
+        margin-top: 30px;
+        width: 100%;
+    }
+    .box-match{
+        flex-direction: column;
+        margin-right: 80px;
+       
+    }
+   .box{
+    display: flex;
+    height: 70px;
+    
+   }
+  
+   .view{
+    display: block;
+   }
+   
+   footer{
+    margin-right: 25px;
+    
+   }
+ }
